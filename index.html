@@ -123,7 +123,8 @@ nav {
 /* ── HERO ──────────────────────────────────────────────────── */
 #hero {
   background: var(--navy);
-  padding-block: 130px 90px;
+  padding-top: 90px;
+  padding-bottom: 0;
   overflow: visible;
   position: relative;
 }
@@ -138,8 +139,8 @@ nav {
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 400px;
-  align-items: start;
+  grid-template-columns: 1fr 380px;
+  align-items: end;
   gap: 48px;
 }
 .hero-eyebrow {
@@ -191,19 +192,17 @@ nav {
 /* Photo box */
 .hero-photo-wrap {
   position: relative;
-  width: 400px;
-  max-width: 100%;
+  width: 100%;
+  align-self: end;
 }
 .hero-photo-simple {
-  border-radius: 8px;
-  overflow: visible;
   line-height: 0;
 }
 .hero-photo-simple img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
+  object-fit: contain;
 }
 .hero-photo-label {
   margin-top: 14px;
