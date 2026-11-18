@@ -192,18 +192,21 @@ nav {
 /* Photo box */
 .hero-photo-wrap {
   width: 100%;
-  align-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .hero-photo-simple {
   line-height: 0;
-  overflow: visible;
+  text-align: center;
 }
 .hero-photo-simple img {
-  width: 100%;
+  width: auto;
   height: auto;
+  max-height: 520px;
+  max-width: 100%;
   display: block;
-  max-height: none !important;
-  overflow: visible;
+  object-fit: contain;
 }
 .hero-photo-label {
   margin-top: 14px;
@@ -500,7 +503,8 @@ footer span { color: var(--gold); }
   .hero-grid { grid-template-columns: 1fr; row-gap: 32px; }
   #hero { padding-block: 110px 60px; }
   .hero-name { font-size: clamp(32px, 8vw, 52px); }
-  .hero-photo-wrap { max-width: 400px; margin: 0 auto; width: 100%; }
+  .hero-photo-wrap { max-width: 400px; margin: 0 auto; width: 100%; justify-content: center; }
+  .hero-photo-simple img { max-height: 460px; }
   .exp-grid { grid-template-columns: 1fr; }
   .exp-card.full .exp-bullets { grid-template-columns: 1fr; }
   .skill-grid { grid-template-columns: 1fr 1fr; }
